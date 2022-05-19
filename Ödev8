@@ -1,0 +1,35 @@
+
+
+1-CREATE TABLE employee (	
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	email VARCHAR (100),
+	birthdate DATE
+);
+
+2-insert into employee (id, first_name, last_name, email, birthdate) values (1, 'Johnathan', 'Sushams', null, '2022-05-18');
+insert into employee (id, first_name, last_name, email, birthdate) values (2, 'Anton', 'Harewood', 'aharewood1@hao123.com', '2021-06-04');
+insert into employee (id, first_name, last_name, email, birthdate) values (3, 'Lulu', 'Dodman', 'ldodman2@ibm.com', '2021-07-13');
+insert into employee (id, first_name, last_name, email, birthdate) values (4, 'Tristam', 'Coultas', null, '2021-06-28');
+insert into employee (id, first_name, last_name, email, birthdate) values (5, 'Caldwell', 'Murrill', 'cmurrill4@ebay.co.uk', '2021-10-29');
+insert into employee (id, first_name, last_name, email, birthdate) values (6, 'Lissy', 'Tomkies', 'ltomkies5@macromedia.com', '2021-08-15');
+insert into employee (id, first_name, last_name, email, birthdate) values (7, 'Mirna', 'Poter', 'mpoter6@digg.com', '2021-07-08');
+insert into employee (id, first_name, last_name, email, birthdate) values (8, 'Tara', 'Willgoss', null, '2021-07-25');..........................
+
+
+3-UPDATE employee
+	SET first_name = 'Cem', 
+    last_name = 'Ozcan' ,
+    email = 'cemozcan@hotmail.com',
+    birthdate = '1998-04-22'
+	WHERE id = 1;
+
+4- -DELETE fROM employee
+   WHERE id = 1 
+  -delete from employee
+   where first_name LIKE 'O%'
+  -delete from employee
+   where last_name LIKE '%s'
+  -delete from employee
+   where last_name ='Jubb';
