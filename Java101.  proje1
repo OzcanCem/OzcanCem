@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int quiz,vize, lastdance;
+        double ortalama;
+        Scanner input = new Scanner(System.in);
+        System.out.print("quiz notunu giriniz: ");
+        quiz = input.nextInt();
+        System.out.print("vize notunu giriniz: ");
+        vize = input.nextInt();
+        System.out.print("lastdance notunu giriniz: ");
+        lastdance = input.nextInt();
+
+        ortalama = (quiz * 0.2) + (vize * 0.35) + (lastdance * 0.45);
+        System.out.println("not ortalamanız :" + ortalama);
+        String sonuc = (ortalama >= 60) ? "geçtiniz": "kaldınız:";
+        System.out.println(sonuc);
+
+    }
+}
+
